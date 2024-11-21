@@ -1,0 +1,214 @@
+/* Reset margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Fredoka;
+}
+
+body {
+    color: #333;
+    position: relative; /* Needed for positioning the pseudo-element */
+    animation: bgScroll 15s linear infinite;
+}
+
+body::before {
+    content: ''; /* Creates the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.4; /* Apply opacity to the background image */
+    z-index: -1; /* Ensure the pseudo-element stays behind the content */
+}
+
+/* Hero section styling */
+#hero {
+    background: #003366; /* Deep Navy Blue background */
+    color: #FFD700; /* Gold text */
+    padding: 50px 0;
+    margin-top: 60px; /* Added margin to separate from navbar */
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold text in hero section */
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #FFD700; /* Gold text in hero section */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #003366; /* Deep Navy Blue background for navbar */
+    padding: 1rem 0;
+}
+
+.navbar button {
+    border-color: #FFD700;
+    background-color: transparent;
+    color: #FFD700;
+}
+
+.navbar-brand {
+    color: #FFD700; /* Gold text for "DM" */
+}
+
+.navbar-nav .nav-link {
+    color: #FFD700; /* Gold text for navbar items */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* White hover effect */
+}
+
+.navbar.navbar-expand-lg.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+    background-color: gold;
+}
+
+/* Carousel Section Styling */
+.carousel-item {
+    height: 500px; /* Set a fixed height for the carousel items */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+    height: 100%; /* Ensure the image takes up full height */
+}
+
+/* Left Column (Text & Button) */
+.carousel-text {
+    max-width: 90%; /* Limit the width of the text content */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.carousel-text h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.carousel-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.carousel-text .btn {
+    background-color: #FFD700; /* Gold button */
+    border-color: #FFD700; /* Gold button border */
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+
+.carousel-text .btn:hover {
+    background-color: #f0c300; /* Slightly darker gold on hover */
+}
+
+/* Layout Adjustments for Flex */
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-6 {
+    padding: 20px; /* Adds spacing around the columns */
+}
+
+/* Cards section styling */
+.card {
+    border: 1px solid #FFD700; /* Gold border for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100%; /* Ensure the card takes the full height */
+}
+
+/* Make the images fill the card and maintain the aspect ratio */
+.card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px; /* Fixed height for uniform images */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    min-height: 180px; /* Ensure uniform height for all card bodies */
+}
+
+/* Uniform title and text inside the card */
+.card-title {
+    color: #003366; /* Deep Navy Blue text for card titles */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #003366; /* Deep Navy Blue text for card descriptions */
+    font-size: 0.95rem;
+    margin-bottom: 10px; /* Space between description and button */
+}
+
+.card-body .btn-primary {
+    background-color: #FFD700; /* Gold button */
+    border-color: #FFD700; /* Gold button border */
+}
+
+.card-body .btn-primary:hover {
+    background-color: #f0c300; /* Slightly darker gold on hover */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #003366; /* Deep Navy Blue background for footer */
+    color: #FFD700; /* Gold text for footer */
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700; /* Gold text for links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White text for footer links on hover */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+    .carousel-text {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .carousel-item {
+        height: auto; /* Adjust height based on content for smaller screens */
+    }
+    
+}

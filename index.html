@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S80 Mock Technical Exam</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.0.2 Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DM School Supplies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Merchandise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-white text-center py-4 mt-5 mb-5"> 
+        <div class="container">
+            <h1>Welcome to Our School Supplies Store</h1>
+            <p>Your one-stop shop for all your school needs!</p>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Left Column for Text and Button -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center text-center">
+                <div class="carousel-text">
+                    <h5>Shop Now!</h5>
+                    <p>Find everything you need for school. Don’t wait, stock up on the best supplies before the new semester starts!</p>
+                    <a href="#" class="btn btn-lg btn-warning text-dark">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Right Column for Carousel -->
+            <div class="col-lg-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/school-supplies-1.jpg" class="d-block w-100" alt="School Supplies 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school-supplies-2.jpg" class="d-block w-100" alt="School Supplies 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school-supplies-3.jpg" class="d-block w-100" alt="School Supplies 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Heading Section -->
+    <section class="text-center py-5">
+        <h2>Our Best Sellers</h2>
+        <p>Check out our top-rated school supplies for the new school year.</p>
+    </section>
+
+    <!-- Cards -->
+    <section class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/school-supply-1.jpg" class="card-img-top" alt="Notebook">
+                    <div class="card-body">
+                        <h5 class="card-title">Notebook</h5>
+                        <p class="card-text">Perfect for note-taking in class.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/school-supply-2.jpg" class="card-img-top" alt="Pencils">
+                    <div class="card-body">
+                        <h5 class="card-title">Pencils</h5>
+                        <p class="card-text">Smooth writing pencils for all your school tasks.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/school-supply-3.jpg" class="card-img-top" alt="Backpack">
+                    <div class="card-body">
+                        <h5 class="card-title">Backpack</h5>
+                        <p class="card-text">Durable and stylish backpacks for students.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 School Supplies Store | Contact us at schoolsupplies@dearmama.com</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
